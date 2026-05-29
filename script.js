@@ -33,3 +33,7 @@ class Square extends Rectangle {
     return 4 * this.width;
   }
 }
+
+// Make classes global
+window.Rectangle = Rectangle;
+window.Square = Square;
