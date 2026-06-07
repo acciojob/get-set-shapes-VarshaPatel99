@@ -1,104 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rectangle and Square Classes</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 40px;
-      text-align: center;
-    }
-
-    .container {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    .result {
-      margin-top: 20px;
-      text-align: left;
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Result</title>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Rectangle and Square</h1>
-
-    <div class="result" id="output"></div>
-  </div>
-
-  <script>
-    // Rectangle Class
-    class Rectangle {
-      constructor(width, height) {
-        this._width = width;
-        this._height = height;
-      }
-
-      // Getters
-      get width() {
-        return this._width;
-      }
-
-      get height() {
-        return this._height;
-      }
-
-      // Calculate area
-      getArea() {
-        return this._width * this._height;
-      }
-    }
-
-    // Square Class extends Rectangle
-    class Square extends Rectangle {
-      constructor(side) {
-        super(side, side);
-      }
-
-      // Calculate perimeter
-      getPerimeter() {
-        return 4 * this.width;
-      }
-    }
-
-    // Create objects
-    const rectangle = new Rectangle(8, 5);
-    const square = new Square(6);
-
-    // Display results
-    document.getElementById("output").innerHTML = `
-      <h2>Rectangle</h2>
-      <p>Width: ${rectangle.width}</p>
-      <p>Height: ${rectangle.height}</p>
-      <p>Area: ${rectangle.getArea()}</p>
-
-      <h2>Square</h2>
-      <p>Side: ${square.width}</p>
-      <p>Area: ${square.getArea()}</p>
-      <p>Perimeter: ${square.getPerimeter()}</p>
-    `;
-  </script>
+  <div class="result" id="output"></div>
 
 </body>
 </html>
